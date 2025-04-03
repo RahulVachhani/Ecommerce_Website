@@ -53,7 +53,7 @@ class LoginSerializer(serializers.Serializer):
             raise serializers.ValidationError({'error' : 'Please verify email!'})
         user.last_login = timezone.now()
         user.save()
-        return user
+        
     
 
 class CategorySerializer(serializers.ModelSerializer):

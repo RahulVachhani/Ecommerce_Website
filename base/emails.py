@@ -7,6 +7,7 @@ def send_profile_activation_email(email, email_token):
     subject = 'Your acount needs to be verified'
     email_from = settings.EMAIL_HOST_USER
     message = f'Hi, click on this link to activate your profile http http://127.0.0.1:8000/users/activate/{email_token}/'
+    print('sended')
     send_mail(subject, message, email_from, [email])
 
 

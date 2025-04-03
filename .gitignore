@@ -50,7 +50,6 @@ coverage.xml
 
 # Static files
 staticfiles/
-media/
 
 # Environment variable files
 .env
