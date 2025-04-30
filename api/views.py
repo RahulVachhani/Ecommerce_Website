@@ -160,7 +160,6 @@ class AddItemToCartAPIview(APIView):
         if not product.exists():
             return Response({'error' : ['product does not exists']}, status=status.HTTP_404_NOT_FOUND)
        
-
         if size:
             try:
                 size_variant = SizeVariant.objects.get(size_name = size)
